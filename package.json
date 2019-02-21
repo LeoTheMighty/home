@@ -2,7 +2,7 @@
   "name": "leo-github-page",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://leothemighty.github.io/leo-react-website",
+  "homepage": "https://leothemighty.github.io/home",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.7.0",
