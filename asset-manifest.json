@@ -1,14 +1,14 @@
 {
-  "main.css": "/leo-react-website/static/css/main.e8c9193b.chunk.css",
-  "main.js": "/leo-react-website/static/js/main.cb2c9f69.chunk.js",
-  "main.js.map": "/leo-react-website/static/js/main.cb2c9f69.chunk.js.map",
-  "static/js/1.0b3edb42.chunk.js": "/leo-react-website/static/js/1.0b3edb42.chunk.js",
-  "static/js/1.0b3edb42.chunk.js.map": "/leo-react-website/static/js/1.0b3edb42.chunk.js.map",
-  "runtime~main.js": "/leo-react-website/static/js/runtime~main.d207a843.js",
-  "runtime~main.js.map": "/leo-react-website/static/js/runtime~main.d207a843.js.map",
-  "static/media/logo.svg": "/leo-react-website/static/media/logo.5d5d9eef.svg",
-  "static/css/main.e8c9193b.chunk.css.map": "/leo-react-website/static/css/main.e8c9193b.chunk.css.map",
-  "index.html": "/leo-react-website/index.html",
-  "precache-manifest.5dde98e050853a36e6e73139ba897ec4.js": "/leo-react-website/precache-manifest.5dde98e050853a36e6e73139ba897ec4.js",
-  "service-worker.js": "/leo-react-website/service-worker.js"
+  "main.css": "/home/static/css/main.e8c9193b.chunk.css",
+  "main.js": "/home/static/js/main.ef75bc73.chunk.js",
+  "main.js.map": "/home/static/js/main.ef75bc73.chunk.js.map",
+  "static/js/1.0b3edb42.chunk.js": "/home/static/js/1.0b3edb42.chunk.js",
+  "static/js/1.0b3edb42.chunk.js.map": "/home/static/js/1.0b3edb42.chunk.js.map",
+  "runtime~main.js": "/home/static/js/runtime~main.e258ea17.js",
+  "runtime~main.js.map": "/home/static/js/runtime~main.e258ea17.js.map",
+  "static/media/logo.svg": "/home/static/media/logo.5d5d9eef.svg",
+  "static/css/main.e8c9193b.chunk.css.map": "/home/static/css/main.e8c9193b.chunk.css.map",
+  "index.html": "/home/index.html",
+  "precache-manifest.19f483f8410410ae42217ea2b3e12e0e.js": "/home/precache-manifest.19f483f8410410ae42217ea2b3e12e0e.js",
+  "service-worker.js": "/home/service-worker.js"
 }
