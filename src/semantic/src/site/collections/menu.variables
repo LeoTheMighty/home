@@ -1,6 +1,3 @@
 /*******************************
     User Variable Overrides
 *******************************/
-
-@invertedActiveBackground: @primaryGradient;
-@invertedActiveColor: @invertedSelectedTextColor;

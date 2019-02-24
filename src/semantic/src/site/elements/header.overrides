@@ -1,7 +1,3 @@
 /*******************************
          Site Overrides
 *******************************/
-
-.ui.sub.header {
-  letter-spacing: .08em !important;
-}
