@@ -4,4 +4,6 @@
 
 @background: @secondaryGradient;
 //@backgroundColor: @primaryGradient;
-@textColor: @primaryColor;
+@textColor: @white;
+@negativeTextColor: @primaryTextColor;
+@positiveTextColor: @primaryTextColor;

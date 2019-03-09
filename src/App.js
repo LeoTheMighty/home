@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
-import { Message, Segment, Header, Grid, Tab, Icon, Menu } from "semantic-ui-react";
+import { Message, Divider, Header, Grid, Tab, Icon, Menu } from "semantic-ui-react";
 import Breakpoint from "react-socks";
 import './App.css';
 import Experience from "./screens/Experience";
 import Projects from "./screens/Projects";
 import AboutMe from "./screens/AboutMe";
-import Resume from "./screens/Resume";
-import References from "./screens/References";
+// import References from "./screens/References";
 import Contact from "./screens/Contact";
+import ProfilePicture from "./components/ProfilePicture";
+import SocialMediaLinks from "./components/SocialMediaLinks";
+import resume from "./img/resume.pdf";
+import Skills from "./screens/Skills";
 
 class App extends Component {
     render() {
@@ -19,18 +22,19 @@ class App extends Component {
                         <Grid.Column floated="left" width={1}/>
                         <Grid.Column width={13}>
                             <Message>
-                                <Header as="h2" textAlign="center" fluid>Leo Belyi</Header>
-                                <Header as="h4" textAlign="center" fluid>Software Engineer and Entrepreneur</Header>
+                                <Header as="h2" textAlign="center">Leo Belyi</Header>
+                                <Header as="h4" textAlign="center">Software Engineer and Entrepreneur</Header>
                             </Message>
+                            <ProfilePicture/>
                         </Grid.Column>
                         <Grid.Column floated="right" width={1}/>
                     </Grid.Row>
                     <Grid.Row/>
                 </Grid>
-                <Tab menu={{fixed: "top", widths: 6, size: "large"}} textAlign="center"
+                <Tab menu={{fixed: "top", widths: 5, size: "large"}} textAlign="center"
                     panes={[{
                         menuItem:
-                            <Menu.Item primary key={0}>
+                            <Menu.Item key={0}>
                                 <Icon name="user circle outline"/>
                                 <Breakpoint m up>About Me</Breakpoint>
                             </Menu.Item>,
@@ -41,7 +45,7 @@ class App extends Component {
                         }
                     },{
                         menuItem:
-                            <Menu.Item primary key={0}>
+                            <Menu.Item key={1}>
                                 <Icon name="laptop"/>
                                 <Breakpoint m up>Projects</Breakpoint>
                             </Menu.Item>,
@@ -52,7 +56,7 @@ class App extends Component {
                         }
                     },{
                         menuItem:
-                            <Menu.Item key={0}>
+                            <Menu.Item key={2}>
                                 <Icon name="suitcase"/>
                                 <Breakpoint m up>Experience</Breakpoint>
                             </Menu.Item>,
@@ -63,29 +67,42 @@ class App extends Component {
                         }
                     },{
                         menuItem:
-                            <Menu.Item key={0}>
+                            <Menu.Item key={3} href={resume}>
                                 <Icon name="file alternate outline"/>
                                 <Breakpoint m up>Resume</Breakpoint>
                             </Menu.Item>,
-                        render: () => {
-                            return (
-                                <Resume/>
-                            );
-                        }
+                        render: () => (
+                            <div align="center">
+                                <p>If the link doesn't immediately load, click  {" "}
+                                    <a href={resume}>here</a>!</p>
+                            </div>
+                        )
+
                     },{
+                    //     menuItem:
+                    //         <Menu.Item key={4}>
+                    //             <Icon name="star"/>
+                    //             <Breakpoint m up>Skills</Breakpoint>
+                    //         </Menu.Item>,
+                    //     render: () => {
+                    //         return (
+                    //             <Skills/>
+                    //         );
+                    //     }
+                    // },{
+                    //     menuItem:
+                    //         <Menu.Item key={4}>
+                    //             <Icon name="group"/>
+                    //             <Breakpoint m up>References</Breakpoint>
+                    //         </Menu.Item>,
+                    //     render: () => {
+                    //         return (
+                    //             <References/>
+                    //         );
+                    //     }
+                    // },{
                         menuItem:
-                            <Menu.Item key={0}>
-                                <Icon name="group"/>
-                                <Breakpoint m up>References</Breakpoint>
-                            </Menu.Item>,
-                        render: () => {
-                            return (
-                                <References/>
-                            );
-                        }
-                    },{
-                        menuItem:
-                            <Menu.Item key={0}>
+                            <Menu.Item key={5}>
                                 <Icon name="text telephone"/>
                                 <Breakpoint m up>Contact</Breakpoint>
                             </Menu.Item>,
@@ -96,6 +113,9 @@ class App extends Component {
                         }
                     }]}
                 />
+                <Divider hidden/>
+                <Divider/>
+                <SocialMediaLinks/>
             </div>
         );
     }
