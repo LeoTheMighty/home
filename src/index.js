@@ -3,9 +3,27 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import './semantic/dist/semantic.min.css'
+import { BreakpointProvider, setDefaultBreakpoints } from "react-socks";
 import * as serviceWorker from './serviceWorker';
+import { Provider } from "react-redux";
+import store from "./redux/store";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+setDefaultBreakpoints([
+    { xs: 0 },
+    { s: 376 },
+    { m: 600 },
+    { l: 769 },
+    { xl: 1025 }
+]);
+
+ReactDOM.render(
+    <BreakpointProvider>
+        <Provider store={store}>
+            <App />
+        </Provider>
+    </BreakpointProvider>
+    , document.getElementById('root')
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

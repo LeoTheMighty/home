@@ -3,9 +3,11 @@
 *******************************/
 
 body {
-  background-image: linear-gradient(to left top, #7F47AE, #bc6ae1, #db6ec9, #eb79b6, #f189a8);
+  background-image: @primaryGradient;
+  //background-image: @secondaryGradient;
+  //background-image: linear-gradient(to left top, #7F47AE, #bc6ae1, #db6ec9, #eb79b6, #f189a8);
 }
 
-.u-bg--primaryGradient {
-  background-image: @primaryGradient !important;
-}
+//.u-bg--primaryGradient {
+//  background-image: @primaryGradient !important;
+//}

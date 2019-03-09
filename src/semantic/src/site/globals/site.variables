@@ -19,5 +19,10 @@
 /* Used on inputs, textarea etc */
 @focusedFormBorderColor: @primaryColor;
 
-//@primaryGradient: linear_gradient(to right, #7F47AE, #db6ec9);
-@primaryGradient: @primaryColor;
+@primaryGradient: linear-gradient(to left top, #67378e, #9854b7, #c44eb0, #cc5795, #db6286);
+//@primaryGradient: linear-gradient(to left bottom, #7ac6d9, #3799a9, #317b7d, #094e92, #03044e);
+@secondaryGradient: linear-gradient(to right top, #372047, #372047, #572863, #6c337a);
+//@secondaryGradient: linear-gradient(to right top, #f7f007, #f7f907, #f7f803, #fcf30a);
+//@primaryGradient: @primaryColor;
+
+@primaryTextColor: #edd0ed;

@@ -1,3 +1,7 @@
 /*******************************
     User Variable Overrides
 *******************************/
+@secondaryInvertedActiveBackground: @secondaryGradient;
+@background: @secondaryGradient;
+@textColor: @primaryTextColor;
+@iconMenuInvertedItemColor: @secondaryGradient;

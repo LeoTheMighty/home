@@ -25,7 +25,9 @@
   display: flex;
   margin: 1rem 0em;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  background: #FFFFFF;
+  background: -webkit-gradient(linear, left bottom, right top, from(#372047), color-stop(#372047), color-stop(#572863), to(#6c337a));
+  background: -webkit-linear-gradient(left bottom, #372047, #372047, #572863, #6c337a);
+  background: linear-gradient(to right top, #372047, #372047, #572863, #6c337a);
   font-weight: normal;
   border: 1px solid rgba(34, 36, 38, 0.15);
   -webkit-box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
@@ -88,7 +90,7 @@
   background: none;
   padding: 0.92857143em 1.14285714em;
   text-transform: none;
-  color: rgba(0, 0, 0, 0.87);
+  color: #edd0ed;
   font-weight: normal;
   -webkit-transition: background 0.1s ease, color 0.1s ease, -webkit-box-shadow 0.1s ease;
   transition: background 0.1s ease, color 0.1s ease, -webkit-box-shadow 0.1s ease;
@@ -239,7 +241,7 @@
   font-size: 1em !important;
   padding: 0.78571429em 1.14285714em !important;
   background: transparent !important;
-  color: rgba(0, 0, 0, 0.87) !important;
+  color: #edd0ed !important;
   text-transform: none !important;
   font-weight: normal !important;
   -webkit-box-shadow: none !important;
@@ -638,7 +640,7 @@ Floated Menu / Item
   border-right: 1px solid transparent;
   border-top: 2px solid transparent;
   padding: 0.92857143em 1.42857143em;
-  color: rgba(0, 0, 0, 0.87);
+  color: #edd0ed;
 }
 .ui.tabular.menu .item:before {
   display: none;
@@ -881,7 +883,9 @@ Floated Menu / Item
   color: #ffffff !important;
 }
 .ui.secondary.inverted.menu .active.item {
-  background: rgba(255, 255, 255, 0.15);
+  background: -webkit-gradient(linear, left bottom, right top, from(#372047), color-stop(#372047), color-stop(#572863), to(#6c337a));
+  background: -webkit-linear-gradient(left bottom, #372047, #372047, #572863, #6c337a);
+  background: linear-gradient(to right top, #372047, #372047, #572863, #6c337a);
   color: #ffffff !important;
 }
 
@@ -969,7 +973,7 @@ Floated Menu / Item
 .ui.secondary.pointing.menu .link.item:hover,
 .ui.secondary.pointing.menu a.item:hover {
   background-color: transparent;
-  color: rgba(0, 0, 0, 0.87);
+  color: #edd0ed;
 }
 
 /* Pressed */
@@ -1228,7 +1232,7 @@ Floated Menu / Item
 
 /* Inverted */
 .ui.inverted.icon.menu .item {
-  color: #FFFFFF;
+  color: linear-gradient(to right top, #372047, #372047, #572863, #6c337a);
 }
 
 /*--------------

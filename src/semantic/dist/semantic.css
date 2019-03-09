@@ -750,13 +750,9 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 *******************************/
 
 body {
-  background-image: -webkit-gradient(linear, right bottom, left top, from(#7F47AE), color-stop(#bc6ae1), color-stop(#db6ec9), color-stop(#eb79b6), to(#f189a8));
-  background-image: -webkit-linear-gradient(right bottom, #7F47AE, #bc6ae1, #db6ec9, #eb79b6, #f189a8);
-  background-image: linear-gradient(to left top, #7F47AE, #bc6ae1, #db6ec9, #eb79b6, #f189a8);
-}
-
-.u-bg--primaryGradient {
-  background-image: #7F47AE !important;
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#67378e), color-stop(#9854b7), color-stop(#c44eb0), color-stop(#cc5795), to(#db6286));
+  background-image: -webkit-linear-gradient(right bottom, #67378e, #9854b7, #c44eb0, #cc5795, #db6286);
+  background-image: linear-gradient(to left top, #67378e, #9854b7, #c44eb0, #cc5795, #db6286);
 }
 /*!
  * # Semantic UI undefined - Button
@@ -6848,7 +6844,7 @@ i.flag.zimbabwe:before {
   font-weight: bold;
   line-height: 1.28571429em;
   text-transform: none;
-  color: rgba(0, 0, 0, 0.87);
+  color: #edd0ed;
 }
 
 .ui.header:first-child {
@@ -23643,7 +23639,9 @@ ol.ui.horizontal.list li:before,
   display: flex;
   margin: 1rem 0em;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  background: #FFFFFF;
+  background: -webkit-gradient(linear, left bottom, right top, from(#372047), color-stop(#372047), color-stop(#572863), to(#6c337a));
+  background: -webkit-linear-gradient(left bottom, #372047, #372047, #572863, #6c337a);
+  background: linear-gradient(to right top, #372047, #372047, #572863, #6c337a);
   font-weight: normal;
   border: 1px solid rgba(34, 36, 38, 0.15);
   -webkit-box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
@@ -23711,7 +23709,7 @@ ol.ui.horizontal.list li:before,
   background: none;
   padding: 0.92857143em 1.14285714em;
   text-transform: none;
-  color: rgba(0, 0, 0, 0.87);
+  color: #edd0ed;
   font-weight: normal;
   -webkit-transition: background 0.1s ease, color 0.1s ease, -webkit-box-shadow 0.1s ease;
   transition: background 0.1s ease, color 0.1s ease, -webkit-box-shadow 0.1s ease;
@@ -23871,7 +23869,7 @@ ol.ui.horizontal.list li:before,
   font-size: 1em !important;
   padding: 0.78571429em 1.14285714em !important;
   background: transparent !important;
-  color: rgba(0, 0, 0, 0.87) !important;
+  color: #edd0ed !important;
   text-transform: none !important;
   font-weight: normal !important;
   -webkit-box-shadow: none !important;
@@ -24302,7 +24300,7 @@ Floated Menu / Item
   border-right: 1px solid transparent;
   border-top: 2px solid transparent;
   padding: 0.92857143em 1.42857143em;
-  color: rgba(0, 0, 0, 0.87);
+  color: #edd0ed;
 }
 
 .ui.tabular.menu .item:before {
@@ -24576,7 +24574,9 @@ Floated Menu / Item
 }
 
 .ui.secondary.inverted.menu .active.item {
-  background: rgba(255, 255, 255, 0.15);
+  background: -webkit-gradient(linear, left bottom, right top, from(#372047), color-stop(#372047), color-stop(#572863), to(#6c337a));
+  background: -webkit-linear-gradient(left bottom, #372047, #372047, #572863, #6c337a);
+  background: linear-gradient(to right top, #372047, #372047, #572863, #6c337a);
   color: #ffffff !important;
 }
 
@@ -24677,7 +24677,7 @@ Floated Menu / Item
 .ui.secondary.pointing.menu .link.item:hover,
 .ui.secondary.pointing.menu a.item:hover {
   background-color: transparent;
-  color: rgba(0, 0, 0, 0.87);
+  color: #edd0ed;
 }
 
 /* Pressed */
@@ -24970,7 +24970,7 @@ Floated Menu / Item
 /* Inverted */
 
 .ui.inverted.icon.menu .item {
-  color: #FFFFFF;
+  color: linear-gradient(to right top, #372047, #372047, #572863, #6c337a);
 }
 
 /*--------------
@@ -25945,10 +25945,12 @@ Floated Menu / Item
   position: relative;
   min-height: 1em;
   margin: 1em 0em;
-  background: #7F47AE;
+  background: -webkit-gradient(linear, left bottom, right top, from(#372047), color-stop(#372047), color-stop(#572863), to(#6c337a));
+  background: -webkit-linear-gradient(left bottom, #372047, #372047, #572863, #6c337a);
+  background: linear-gradient(to right top, #372047, #372047, #572863, #6c337a);
   padding: 1em 1.5em;
   line-height: 1.4285em;
-  color: rgba(0, 0, 0, 0.87);
+  color: #7F47AE;
   -webkit-transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, -webkit-box-shadow 0.1s ease;
   transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, -webkit-box-shadow 0.1s ease;
   transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, box-shadow 0.1s ease;
@@ -29812,7 +29814,7 @@ a.ui.card:hover,
   margin: 1em 0em;
   width: 100%;
   min-height: 0px;
-  background: transparent;
+  background: #FFFFFF;
   padding: 0em;
   border: none;
   border-radius: 0rem;

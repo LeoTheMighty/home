@@ -194,10 +194,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 *******************************/
 
 body {
-  background-image: -webkit-gradient(linear, right bottom, left top, from(#7F47AE), color-stop(#bc6ae1), color-stop(#db6ec9), color-stop(#eb79b6), to(#f189a8));
-  background-image: -webkit-linear-gradient(right bottom, #7F47AE, #bc6ae1, #db6ec9, #eb79b6, #f189a8);
-  background-image: linear-gradient(to left top, #7F47AE, #bc6ae1, #db6ec9, #eb79b6, #f189a8);
-}
-.u-bg--primaryGradient {
-  background-image: #7F47AE !important;
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#67378e), color-stop(#9854b7), color-stop(#c44eb0), color-stop(#cc5795), to(#db6286));
+  background-image: -webkit-linear-gradient(right bottom, #67378e, #9854b7, #c44eb0, #cc5795, #db6286);
+  background-image: linear-gradient(to left top, #67378e, #9854b7, #c44eb0, #cc5795, #db6286);
 }

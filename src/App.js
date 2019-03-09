@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Message, Segment, Header, Grid, Tab, Icon, Menu } from "semantic-ui-react";
+import Breakpoint from "react-socks";
 import './App.css';
 import Experience from "./screens/Experience";
 import Projects from "./screens/Projects";
@@ -15,21 +16,24 @@ class App extends Component {
                 <Grid fluid rows={3} columns={3} style={{marginTop: "0px"}}>
                     <Grid.Row/>
                     <Grid.Row>
-                        <Grid.Column/>
-                        <Grid.Column>
-                            <Message className="u-bg--primaryGradient">
+                        <Grid.Column floated="left" width={1}/>
+                        <Grid.Column width={13}>
+                            <Message>
                                 <Header as="h2" textAlign="center" fluid>Leo Belyi</Header>
                                 <Header as="h4" textAlign="center" fluid>Software Engineer and Entrepreneur</Header>
                             </Message>
                         </Grid.Column>
-                        <Grid.Column/>
+                        <Grid.Column floated="right" width={1}/>
                     </Grid.Row>
                     <Grid.Row/>
                 </Grid>
-                <Tab menu={{fixed: "top", widths: 6, size: "large", inverted: false}} textAlign="center"
+                <Tab menu={{fixed: "top", widths: 6, size: "large"}} textAlign="center"
                     panes={[{
                         menuItem:
-                            <Menu.Item key={0}><Icon name="user circle outline"/>About Me</Menu.Item>,
+                            <Menu.Item primary key={0}>
+                                <Icon name="user circle outline"/>
+                                <Breakpoint m up>About Me</Breakpoint>
+                            </Menu.Item>,
                         render: () => {
                             return (
                                 <AboutMe/>
@@ -37,7 +41,10 @@ class App extends Component {
                         }
                     },{
                         menuItem:
-                            <Menu.Item key={0}><Icon name="laptop"/>Projects</Menu.Item>,
+                            <Menu.Item primary key={0}>
+                                <Icon name="laptop"/>
+                                <Breakpoint m up>Projects</Breakpoint>
+                            </Menu.Item>,
                         render: () => {
                             return (
                                 <Projects/>
@@ -45,7 +52,10 @@ class App extends Component {
                         }
                     },{
                         menuItem:
-                            <Menu.Item key={0}><Icon name="suitcase"/>Experience</Menu.Item>,
+                            <Menu.Item key={0}>
+                                <Icon name="suitcase"/>
+                                <Breakpoint m up>Experience</Breakpoint>
+                            </Menu.Item>,
                         render: () => {
                             return (
                                 <Experience/>
@@ -53,7 +63,10 @@ class App extends Component {
                         }
                     },{
                         menuItem:
-                            <Menu.Item key={0}><Icon name="file alternate outline"/>Resume</Menu.Item>,
+                            <Menu.Item key={0}>
+                                <Icon name="file alternate outline"/>
+                                <Breakpoint m up>Resume</Breakpoint>
+                            </Menu.Item>,
                         render: () => {
                             return (
                                 <Resume/>
@@ -61,7 +74,10 @@ class App extends Component {
                         }
                     },{
                         menuItem:
-                            <Menu.Item key={0}><Icon name="group"/>References</Menu.Item>,
+                            <Menu.Item key={0}>
+                                <Icon name="group"/>
+                                <Breakpoint m up>References</Breakpoint>
+                            </Menu.Item>,
                         render: () => {
                             return (
                                 <References/>
@@ -69,7 +85,10 @@ class App extends Component {
                         }
                     },{
                         menuItem:
-                            <Menu.Item key={0}><Icon name="text telephone"/>Contact</Menu.Item>,
+                            <Menu.Item key={0}>
+                                <Icon name="text telephone"/>
+                                <Breakpoint m up>Contact</Breakpoint>
+                            </Menu.Item>,
                         render: () => {
                             return (
                                 <Contact/>

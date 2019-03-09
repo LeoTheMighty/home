@@ -17,10 +17,12 @@
   position: relative;
   min-height: 1em;
   margin: 1em 0em;
-  background: #7F47AE;
+  background: -webkit-gradient(linear, left bottom, right top, from(#372047), color-stop(#372047), color-stop(#572863), to(#6c337a));
+  background: -webkit-linear-gradient(left bottom, #372047, #372047, #572863, #6c337a);
+  background: linear-gradient(to right top, #372047, #372047, #572863, #6c337a);
   padding: 1em 1.5em;
   line-height: 1.4285em;
-  color: rgba(0, 0, 0, 0.87);
+  color: #7F47AE;
   -webkit-transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, -webkit-box-shadow 0.1s ease;
   transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, -webkit-box-shadow 0.1s ease;
   transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, box-shadow 0.1s ease;
